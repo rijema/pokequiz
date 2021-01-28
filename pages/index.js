@@ -6,7 +6,10 @@ import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizLogo from '../src/components/QuizLogo';
+import Input from '../src/components/Input';
 import {useRouter} from 'next/router'
+import Button from '../src/components/Button';
+import QuizContainer from '../src/components/QuizContainer'
 
 /* const Title = styled.h1`
   font-size: 50px;
@@ -20,22 +23,10 @@ background-size: cover;
 background-position: center;
 
 `; */
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
-
 export default function Home() {
 
   const router = useRouter();
-  const [nome, setNome] = React.useState('')
+  const [name, setName] = React.useState('')
   return (
 
     <QuizBackground backgroundImage={db.bg}>
@@ -47,18 +38,20 @@ export default function Home() {
         <Widget>
         <Widget.Header><h1>Cadastro</h1></Widget.Header>
           <Widget.Content>
+            <p>{db.description}</p>
             <form onSubmit={function (infosEvento) {
               infosEvento.preventDefault()
-              router.push(`/quiz?name=${nome}`)
+              router.push(`/quiz?name=${name}`)
             }}>
-              <input  onChange={function (infosEvento){
-                console.log(infosEvento.target.value)
-                setNome(infosEvento.target.value);  
-              }}
-              placeholder="Fala tu nome" />
-              <button type="submit" disabled={nome.length === 0}>
-                Jogar {nome}
-              </button>
+              <Input  
+                name="nomeUser"
+                onChange={ (infosEvento) => { setName(infosEvento.target.value); }}
+                placeholder="Fala teu nome :)"
+                value={name}
+              />
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
@@ -82,7 +75,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/rijema" />
+      <GitHubCorner projectUrl="https://github.com/rijema/pokequiz" />
     </QuizBackground>
   );
 }

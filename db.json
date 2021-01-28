@@ -1,12 +1,12 @@
 {
-    "bg": "https://miro.medium.com/max/1000/1*0ApNyTQo1Uu0PYgT68tqKg.jpeg",
+    "bg": "https://sm.ign.com/ign_br/screenshot/default/pokemon-the-first-movie-mewtwo-strikes-back_xekh.jpg",
     "pokelogo" : "https://i2.wp.com/multarte.com.br/wp-content/uploads/2019/03/pokemon-png-logo.png?fit=2000%2C736&ssl=1",
     "pokequiz" : "https://www.google.com/url?sa=i&url=http%3A%2F%2Fhepatitecfalacomvoce.com.br%2Fquiz%2F&psig=AOvVaw1ueRKp7e5gjbazP4AHFlm3&ust=1611709283316000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMiKqY2zuO4CFQAAAAAdAAAAABAJ",
     "title": "Quiz CSS da Alura",
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "image": "https://pa1.narvii.com/7384/79c00f1d5643c45181e0f651e628a856ba3d46e4r1-480-360_hq.gif",
         "title": "Como fazer um seletor por id via CSS?",
         "description": "Essa é pra aquecer",
         "answer": 2,
@@ -18,13 +18,49 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "image": "https://66.media.tumblr.com/39f6268c4f6cde26cb4e5b3ac9669023/tumblr_nnwhr2Wzb81tqptlzo1_500.gif",
         "title": "Como fazer um background gradiente com css?",
         "description": "Faz tempo em haha",
         "answer": 0,
         "alternatives": [
            "background: linear-gradient(#e66465, #9198e5);",
            "background: gradient(#e66465, #9198e5);"
+        ]
+      },
+      {
+        "image": "https://s3-sa-east-1.amazonaws.com/descomplica-blog/wp-content/uploads/2016/09/14135132/tumblr_n1b4pjBwm51rc0cy9o1_500.gif",
+        "title": "Como fazer um seletor por id via CSS?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          ".elemento",
+          "*elemento",
+          "#elemento",
+          "%elemento"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/tumblr_m06yzn1Hn71rn95k2o1_500.gif",
+        "title": "Como fazer um seletor por id via CSS?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          ".elemento",
+          "*elemento",
+          "#elemento",
+          "%elemento"
+        ]
+      },
+      {
+        "image": "https://s3-sa-east-1.amazonaws.com/descomplica-blog/wp-content/uploads/2016/09/14135517/tumblr_n1nys2uh7d1rpn9eno1_500.gif",
+        "title": "Como fazer um seletor por id via CSS?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          ".elemento",
+          "*elemento",
+          "#elemento",
+          "%elemento"
         ]
       }
     ],
